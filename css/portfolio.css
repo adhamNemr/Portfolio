@@ -142,6 +142,20 @@ nav {
     opacity: 1;
 }
 
+.nav-cta {
+    padding: 0.6rem 1.2rem;
+    background: var(--accent-gradient);
+    color: #fff !important;
+    border-radius: 100px;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+}
+
+.nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.4);
+}
+
 section {
     padding-bottom: 100vh; /* Absolute isolation - the gap is a full screen size */
     scroll-margin-top: 80px; /* Lands exactly at the content start below navbar */
@@ -231,7 +245,46 @@ h1 span {
     max-width: 500px;
     color: var(--text-dim);
     font-size: 1.1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 1.2rem 2.5rem;
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: var(--transition-premium);
+}
+
+.btn-primary {
+    background: var(--text-main);
+    color: var(--bg-dark);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary {
+    border: 1px solid var(--border-light);
+    color: var(--text-main);
+    backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+    transform: scale(1.05);
 }
 
 /* --- BENTO GRID --- */
